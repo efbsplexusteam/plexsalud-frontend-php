@@ -14,7 +14,8 @@
                     center: 'title',
                     right: 'dayGridMonth,timeGridWeek,timeGridDay'
                 },
-                selectable: true, // Permite seleccionar horas libres
+                selectable: false, // No se permite arrastrar para seleccionar
+                slotDuration: '01:00:00', // Cada franja es 1 hora
                 selectMirror: true, // Efecto visual al seleccionar
                 locale: 'es', // <-- Esto pone el calendario en español
                 select: function(info) {
